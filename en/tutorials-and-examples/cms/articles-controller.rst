@@ -131,7 +131,7 @@ see an error page saying that action hasn't been implemented. Lets fix that now:
     public function view($slug = null)
     {
         $article = $this->Articles->findBySlug($slug)->firstOrFail();
-        $this->set(compact('article'));
+        $this->set(compact('article', 'article'));
     }
 
 While this is a simple action, we've used some powerful CakePHP features. We
